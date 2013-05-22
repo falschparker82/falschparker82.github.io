@@ -94,11 +94,11 @@
   </header>
 
 
-  <div class="entry-content"><p>A nice thing about Cassandra is the easily understandable data model: There are just upserts &ndash; an insert will automatically update / overwrite old rows. This does NOT hold true however in every case when using dynamic columns, as Cassandra does not have the same concept of a &ldquo;row&rdquo; as a traditional database.</p>
+  <div class="entry-content"><p>A nice thing about Cassandra is the easily understandable data model: There are just upserts &ndash; an insert will automatically update / overwrite old rows. This does NOT hold true however in every case when using <em>dynamic</em> columns, as Cassandra does not have the same concept of a &ldquo;row&rdquo; as a traditional database.</p>
 
-<p>Essentially, a Cassandra &ldquo;row&rdquo; is just a double hashmap. One layer goes to the key and says exactly on which server the row is, the column key just says where on the server the column is. This much more flexible concept of pretty independent columns can lead to a problem in this case:</p>
+<p>Essentially, a Cassandra &ldquo;row&rdquo; is just a double hashmap. One layer goes to the key and says exactly <em>on which server</em> the row is, and the column key says <em>where on the server</em> the column is. This very flexible concept can lead to a problem later on though when some of the columns are different.</p>
 
-<h4>Employees:</h4>
+<h4>Employees ColumnFamily:</h4>
 
 <pre><code>employee_id: 599 (KEY)
 name: "Larry Page"
