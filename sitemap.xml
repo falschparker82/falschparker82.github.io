@@ -2,15 +2,15 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/05/22/careful-with-cassandra-upserts/</loc>
-        <lastmod>2013-05-22T09:08:50+02:00</lastmod>
+        <lastmod>2013-05-22T09:15:13+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/archives/</loc>
-        <lastmod>2013-05-22T09:08:50+02:00</lastmod>
+        <lastmod>2013-05-22T09:15:13+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/</loc>
-        <lastmod>2013-05-22T09:08:50+02:00</lastmod>
+        <lastmod>2013-05-22T09:15:13+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/robots.txt</loc>

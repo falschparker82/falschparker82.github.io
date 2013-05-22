@@ -4,7 +4,7 @@
   <title><![CDATA[Hamann Distributed]]></title>
   <link href="http://distributed.hamann.se/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
-  <updated>2013-05-22T09:08:56+02:00</updated>
+  <updated>2013-05-22T09:15:31+02:00</updated>
   <id>http://distributed.hamann.se/</id>
   <author>
     <name><![CDATA[Dominik Hamann]]></name>
@@ -36,7 +36,7 @@ name: "Sylvie Stone"
 devices: ["MacBook Pro"]
 </code></pre>
 
-<p>Sylvie didn&rsquo;t tell us her age (she&rsquo;s a lady after all!) and for new employees, we&rsquo;re also tracking the devices we handed them. When we&rsquo;re upserting employee 599, a lot of people with SQL or MongoDB background are expecting to have the second entry in the database. That&rsquo;s not true unfortunately &ndash; what we will find now is this:</p>
+<p>Sylvie didn&rsquo;t tell us her age (she&rsquo;s a lady after all!) and for new employees, we&rsquo;re also tracking the devices we handed them. When we&rsquo;re upserting employee 599, a lot of people with SQL or a document-oriented database background are expecting to have the second entry in the database. That&rsquo;s not true at all unfortunately &ndash; what we will find now is this:</p>
 
 <pre><code>employee_id: 599 (KEY)
 name: "Sylvie Stone"
@@ -44,7 +44,7 @@ devices: ["MacBook Pro"]
 age: 46
 </code></pre>
 
-<p>Before you think &ldquo;WTF&rdquo; &ndash; think about it for a moment. This is expected behaviour and part of Cassandra&rsquo;s &ldquo;independent columns&rdquo; paradigm &ndash; you just need to model your data properly or navigate around it. As Cassandra columns are way smarter than columns in other databases, there exists a way to do that in case it&rsquo;s needed. How? Look under the hood. What Cassandra really stores is this:</p>
+<p>Before you think &ldquo;WTF&rdquo; &ndash; think about it for a moment. This is expected behaviour and part of Cassandra&rsquo;s &ldquo;independent columns&rdquo; paradigm &ndash; you just need to model your data properly or navigate around it. As Cassandra columns are way smarter than columns in other databases, there exists a way to correct for this effect in case it&rsquo;s needed. How? Look under the hood. What Cassandra really stores is this:</p>
 
 <pre><code>"599": [
     {name:employee_id, value:599, timestamp: 1340385863990010, ttl: 0},
@@ -54,7 +54,9 @@ age: 46
 ]
 </code></pre>
 
-<p>Every decent driver for Cassandra can expose the timestamps and TTL&rsquo;s as well &ndash; and there&rsquo;s your way to clean up the mess in the &ldquo;eventually consistent&rdquo; paradigm that the database follows: If it&rsquo;s not the same timestamp as the key, simply discard the column.</p>
+<p>As you&rsquo;ll have imagined, Sylvie is relieved she&rsquo;s not really 46&hellip; the entry is simply older than the rest of them, but was neither deleted nor overwritten!</p>
+
+<p>Every decent driver for Cassandra can expose the timestamps and TTL&rsquo;s as well &ndash; and there&rsquo;s your solution to clean up the mess in the &ldquo;eventually consistent&rdquo; paradigm that the database follows: If it&rsquo;s not the same timestamp as the key, simply discard the column (you&rsquo;re free to delete it as well).</p>
 
 <p>And don&rsquo;t worry, this added hassle in handling something that would be considered a no-brainer with more conventional databases is more than worth the flexibility gained with Cassandra&rsquo;s independent columns. More on advanced data modelling leveraging this power will follow!</p>
 ]]></content>
