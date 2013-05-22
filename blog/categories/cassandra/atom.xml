@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Hamann Distributed]]></title>
-  <link href="http://distributed.hamann.se/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Cassandra | Hamann Distributed]]></title>
+  <link href="http://distributed.hamann.se/blog/categories/cassandra/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
   <updated>2013-05-22T08:18:37+02:00</updated>
   <id>http://distributed.hamann.se/</id>

@@ -1,15 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://falschparker82.github.io/blog/archives/</loc>
-        <lastmod>2013-05-15T10:03:50+02:00</lastmod>
+        <loc>http://distributed.hamann.se/blog/2013/05/22/careful-with-cassandra-upserts/</loc>
+        <lastmod>2013-05-22T08:15:26+02:00</lastmod>
     </url>
     <url>
-        <loc>http://falschparker82.github.io/</loc>
-        <lastmod>2013-05-15T10:03:50+02:00</lastmod>
+        <loc>http://distributed.hamann.se/blog/archives/</loc>
+        <lastmod>2013-05-22T08:15:26+02:00</lastmod>
     </url>
     <url>
-        <loc>http://falschparker82.github.io/robots.txt</loc>
+        <loc>http://distributed.hamann.se/</loc>
+        <lastmod>2013-05-22T08:15:26+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://distributed.hamann.se/robots.txt</loc>
         <lastmod>2013-05-15T10:03:50+02:00</lastmod>
     </url>
 </urlset>
