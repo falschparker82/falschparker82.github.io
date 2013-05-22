@@ -120,7 +120,9 @@ devices: ["MacBook Pro"]
 age: 46
 </code></pre>
 
-<p>Before you think &ldquo;WTF&rdquo; &ndash; think about it for a moment. This is expected behaviour and part of Cassandra&rsquo;s &ldquo;independent columns&rdquo; paradigm &ndash; you just need to model your data properly or navigate around it. As Cassandra columns are way smarter than columns in other databases, there exists a way to correct for this effect in case it&rsquo;s needed. How? Look under the hood. What Cassandra really stores is this:</p>
+<p>Welcome to the world of column-oriented databases &ndash; and before you think &ldquo;WTF&rdquo;, think about it for a moment. This is expected behaviour and part of Cassandra&rsquo;s &ldquo;independent columns&rdquo; paradigm. Even if it looks like it in CQL, you never actually overwrite rows &ndash; you overwrite the columns behind it.</p>
+
+<p>So how to avoid this? You just need to model your data properly or navigate around it. As Cassandra columns are way smarter than columns in other databases, there exists a way to correct for this effect in case it&rsquo;s needed. How? Look under the hood. What Cassandra really stores is this:</p>
 
 <pre><code>"599": [
     {name:employee_id, value:599, timestamp: 1340385863990010, ttl: 0},
