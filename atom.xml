@@ -4,7 +4,7 @@
   <title><![CDATA[Hamann Distributed]]></title>
   <link href="http://distributed.hamann.se/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
-  <updated>2013-05-22T09:15:31+02:00</updated>
+  <updated>2013-05-22T09:17:24+02:00</updated>
   <id>http://distributed.hamann.se/</id>
   <author>
     <name><![CDATA[Dominik Hamann]]></name>
@@ -22,7 +22,7 @@
 
 <p>Essentially, a Cassandra &ldquo;row&rdquo; is just a double hashmap. One layer goes to the key and says exactly <em>on which server</em> the row is, and the column key says <em>where on the server</em> the column is. This very flexible concept can lead to a problem later on though when some of the columns are different.</p>
 
-<h4>Employees ColumnFamily:</h4>
+<p>Here&rsquo;s an entry in the &ldquo;Employees&rdquo; ColumnFamily:</p>
 
 <pre><code>employee_id: 599 (KEY)
 name: "Larry Page"
