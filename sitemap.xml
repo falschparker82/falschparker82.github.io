@@ -2,22 +2,26 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/05/22/careful-with-cassandra-upserts/</loc>
-        <lastmod>2013-05-22T09:26:45+02:00</lastmod>
+        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/about-dom/</loc>
-        <lastmod>2013-05-24T15:37:46+02:00</lastmod>
+        <lastmod>2013-05-24T19:51:01+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/archives/</loc>
-        <lastmod>2013-05-22T09:26:45+02:00</lastmod>
+        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/</loc>
-        <lastmod>2013-05-22T09:26:45+02:00</lastmod>
+        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/robots.txt</loc>
-        <lastmod>2013-05-15T10:03:50+02:00</lastmod>
+        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://distributed.hamann.se/search.html</loc>
+        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
     </url>
 </urlset>

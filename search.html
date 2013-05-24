@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Hamann Distributed</title>
+  <title>Hamann Distributed</title>
   <meta name="author" content="Dominik Hamann">
 
   
-  <meta name="description" content=" Blog Archive 2013 Careful with Cassandra upserts
-May 22 2013 posted in Cassandra Recent Posts Careful With Cassandra Upserts ">
+  <meta name="description" content="Search Results $('#search_results').tapir({ 'token': '', 'complete' : function() { document.getElementById('search_loading').style.display="none &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ May 22 2013 posted in Cassandra Recent Posts Careful With Cassandra Upserts ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://distributed.hamann.se/blog/archives">
+  <link rel="canonical" href="http://distributed.hamann.se/search.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Hamann Distributed" type="application/atom+xml">
@@ -77,55 +76,21 @@ May 22 2013 posted in Cassandra Recent Posts Careful With Cassandra Upserts ">
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article role="article">
-  
-  <header>
-    <h1 class="entry-title">Blog Archive</h1>
-    
-  </header>
-  
-  <div id="blog-archives">
-
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/05/22/careful-with-cassandra-upserts/">Careful with Cassandra upserts</a></h1>
-<time datetime="2013-05-22T08:13:00+02:00" pubdate><span class='month'>May</span> <span class='day'>22</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/cassandra/'>Cassandra</a></span>
-</footer>
-
-
-</article>
-
+      <h1 class="entry-title"><center>Search Results</center></h1>
+<div id="search_loading" style="margin: 40px 0">
+    <center><img src="/images/loading.gif"></center>
 </div>
 
-  
-</article>
-
+<script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+<div id="search_results" style="display:none">
+<br>
 </div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/05/22/careful-with-cassandra-upserts/">Careful With Cassandra Upserts</a>
-      </li>
-    
-  </ul>
-</section>
-
-  
-</aside>
+<script>
+         $('#search_results').tapir({
+             'token': '',
+             'complete' : function() { document.getElementById('search_loading').style.display="none"; }
+         });
+</script>
 
 
     </div>
