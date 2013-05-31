@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Architecture | Hamann Distributed]]></title>
+  <link href="http://distributed.hamann.se/blog/categories/architecture/atom.xml" rel="self"/>
+  <link href="http://distributed.hamann.se/"/>
+  <updated>2013-05-31T09:09:50+02:00</updated>
+  <id>http://distributed.hamann.se/</id>
+  <author>
+    <name><![CDATA[Dominik Hamann]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cache invalidation made easy]]></title>
+    <link href="http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy/"/>
+    <updated>2013-05-31T08:13:00+02:00</updated>
+    <id>http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy</id>
+    <content type="html"><![CDATA[<p><blockquote><p>&ldquo;There are only two hard problems in Computer Science: cache invalidation and naming things.&rdquo;</p><footer><strong>Phil Karlton</strong></footer></blockquote></p>
+
+<p>Full disclaimer: No, I didn&rsquo;t find the perfect solution either (guess it&rsquo;s an NP hard problem). For a lot of use cases, one of the generically applicable patterns I like best is explained very well by <a href="http://37signals.com/svn/posts/3113-how-key-based-cache-expiration-works">DHH</a> &ndash; my problem with it was that it does not cover the case when entity content changes under the very same ID. I will show you another nice and generic pattern for just this purpose for you to have another trick up your sleeve.</p>
+
+<p>For us, the key problem was about distributed tracking applications caching metadata about the campaigns or images we&rsquo;re delivering. For example, if a campaign manager needs to change the URL, the tracking application needs to redirect to another target. As the tracking is high volume, caching was a no-brainer. For cache invalidation, we settled for a pull approach of one minute refreshes from the database first, which could unfortunately serve stale data and obviously wouldn&rsquo;t scale with growing numbers of entries and servers.</p>
+
+<p>Now instead of custom-building something ourselves, we thought of a more generic approach &ndash; and for us, it boiled down to a dead simple convention.</p>
+
+<h4>How it works</h4>
+
+<p>First step, set up a messaging service. If you&rsquo;re on Amazon like us, <a href="http://aws.amazon.com/de/sns/">SNS</a> (+<a href="http://aws.amazon.com/de/sqs/">SQS</a> maybe) fits the bill perfectly and is set up in minutes, otherwise you might consider <a href="http://www.rabbitmq.com/">RabbitMQ</a> or any AMQP provider.</p>
+
+<p>Second step, create one topic for every entity with the same name.</p>
+
+<p>Third step, follow an easy convention:</p>
+
+<ul>
+<li>Everyone who is mutating this entity (with us, it&rsquo;s just the API, making things even easier) publishes the entity ID to the topic after writing to the database.</li>
+<li>Everyone who is caching this entity subscribes to the topic and re-pulls the instance when a &ldquo;dirty&rdquo; ID comes in.</li>
+</ul>
+
+
+<h5>This approach is so beautiful for a lot of reasons:</h5>
+
+<ul>
+<li>Loose coupling. There are no hard dependencies between any apps following this pattern, but they all work together magically with no stale caches</li>
+<li>Very easy to convert from a pull-based system</li>
+<li>No to low security hassle. Data never goes through the queue, only IDs</li>
+<li>Added plus for SNS users: You can safely leave the dirty work of monitoring and reliably keeping up a messaging system to Amazon.</li>
+</ul>
+
+
+<p>Caveat lector: Obviously this approach will probably only be viable for medium- to low-volume core and master data. For caching and invalidation at several orders of magnitude higher, you&rsquo;d probably be looking at specialized solutions and optimized modelling (Cassandra, S4 and the likes). Also, be careful as this eventually consistent solution still has some low but unknown amount of time where the cache will be stale. So if you&rsquo;re <em>absolutely dependent</em> on consistency for a problem domain, there are few other ways than disabling caching altogether.</p>
+]]></content>
+  </entry>
+  
+</feed>

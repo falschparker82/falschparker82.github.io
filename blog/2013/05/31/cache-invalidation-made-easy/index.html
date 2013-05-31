@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Hamann Distributed</title>
+  <title>Cache invalidation made easy - Hamann Distributed</title>
   <meta name="author" content="Dominik Hamann">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://distributed.hamann.se">
+  <link rel="canonical" href="http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Hamann Distributed" type="application/atom+xml">
@@ -76,15 +76,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/05/31/cache-invalidation-made-easy/">Cache Invalidation Made Easy</a></h1>
+      <h1 class="entry-title">Cache Invalidation Made Easy</h1>
     
     
       <p class="meta">
@@ -107,7 +104,7 @@
   </header>
 
 
-  <div class="entry-content"><blockquote><p>&#8220;There are only two hard problems in Computer Science: cache invalidation and naming things.&#8221;</p><footer><strong>Phil Karlton</strong></footer></blockquote>
+<div class="entry-content"><blockquote><p>&#8220;There are only two hard problems in Computer Science: cache invalidation and naming things.&#8221;</p><footer><strong>Phil Karlton</strong></footer></blockquote>
 
 
 <p>Full disclaimer: No, I didn&rsquo;t find the perfect solution either (guess it&rsquo;s an NP hard problem). For a lot of use cases, one of the generically applicable patterns I like best is explained very well by <a href="http://37signals.com/svn/posts/3113-how-key-based-cache-expiration-works">DHH</a> &ndash; my problem with it was that it does not cover the case when entity content changes under the very same ID. I will show you another nice and generic pattern for just this purpose for you to have another trick up your sleeve.</p>
@@ -142,22 +139,16 @@
 
 <p>Caveat lector: Obviously this approach will probably only be viable for medium- to low-volume core and master data. For caching and invalidation at several orders of magnitude higher, you&rsquo;d probably be looking at specialized solutions and optimized modelling (Cassandra, S4 and the likes). Also, be careful as this eventually consistent solution still has some low but unknown amount of time where the cache will be stale. So if you&rsquo;re <em>absolutely dependent</em> on consistency for a problem domain, there are few other ways than disabling caching altogether.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/22/careful-with-cassandra-upserts/">Careful With Cassandra Upserts</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Dominik Hamann</span></span>
+
+      
 
 
 
@@ -169,69 +160,36 @@
   
 
 
-<time datetime="2013-05-22T08:13:00+02:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-05-31T08:13:00+02:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/architecture/'>Architecture</a>, <a class='category' href='/blog/categories/cache/'>Cache</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>A nice thing about Cassandra is the easily understandable data model: There are just upserts &ndash; an insert will automatically update / overwrite old rows. This does NOT hold true however in every case when using <em>dynamic</em> columns, as Cassandra does not have the same concept of a &ldquo;row&rdquo; as a traditional database.</p>
-
-<p>Essentially, a Cassandra &ldquo;row&rdquo; is just a double hashmap. One layer goes to the key and says exactly <em>on which server</em> the row is, and the column key says <em>where on the server</em> the column is. This very flexible concept can lead to a problem later on though when some of the columns are different.</p>
-
-<p>Here&rsquo;s an entry in the &ldquo;Employees&rdquo; ColumnFamily:</p>
-
-<pre><code>employee_id: 599 (KEY)
-name: "Larry Page"
-age: 46
-</code></pre>
-
-<p>Now for various reasons, we have to update employee 599 with another denormalized person:</p>
-
-<pre><code>employee_id: 599 (KEY)
-name: "Sylvie Stone"
-devices: ["MacBook Pro"]
-</code></pre>
-
-<p>Sylvie didn&rsquo;t tell us her age (she&rsquo;s a lady after all!) and for new employees, we&rsquo;re also tracking the devices we handed them. When we&rsquo;re upserting employee 599, a lot of people with SQL or a document-oriented database background are expecting to have the second entry in the database. That&rsquo;s not true at all unfortunately &ndash; what we will find now is this:</p>
-
-<pre><code>employee_id: 599 (KEY)
-name: "Sylvie Stone"
-devices: ["MacBook Pro"]
-age: 46
-</code></pre>
-
-<p>Welcome to the world of column-oriented databases &ndash; and before you think &ldquo;WTF&rdquo;, think about it for a moment. This is expected behaviour and part of Cassandra&rsquo;s &ldquo;independent columns&rdquo; paradigm. Even if it looks like it in CQL, you never actually overwrite rows &ndash; you overwrite the columns behind it.</p>
-
-<p>So how to avoid this? You just need to model your data properly or navigate around it. As Cassandra columns are way smarter than columns in other databases, there exists a way to correct for this effect in case it&rsquo;s needed. How? Look under the hood. What Cassandra really stores is this:</p>
-
-<pre><code>"599": [
-    {name:employee_id, value:599, timestamp: 1340385863990010, ttl: 0},
-    {name:name, value:"Sylvie Stone", timestamp: 1340385863990010, ttl: 0},
-    {name:devices, value:["MacBook Pro"], timestamp: 1340385863990010, ttl: 0},
-    {name:age, value:46, timestamp: 1340133763990010, ttl: 0}
-]
-</code></pre>
-
-<p>As you&rsquo;ll have imagined, Sylvie is relieved she&rsquo;s not really 46&hellip; the entry is simply older than the rest of them, but was neither deleted nor overwritten!</p>
-
-<p>Every decent driver for Cassandra can expose the timestamps and TTL&rsquo;s as well &ndash; and there&rsquo;s your solution to clean up the mess in the &ldquo;eventually consistent&rdquo; paradigm that the database follows: If it&rsquo;s not the same timestamp as the key, simply discard the column (you&rsquo;re free to delete it as well).</p>
-
-<p>And don&rsquo;t worry, this added hassle in handling something that would be considered a no-brainer with more conventional databases is more than worth the flexibility gained with Cassandra&rsquo;s independent columns. More on advanced data modelling leveraging this power will follow!</p>
+      <div class="sharing">
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/22/careful-with-cassandra-upserts/" title="Previous Post: Careful with Cassandra upserts">&laquo; Careful with Cassandra upserts</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -251,6 +209,7 @@ age: 46
 
   
 </aside>
+
 
     </div>
   </div>
