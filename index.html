@@ -160,19 +160,19 @@
 
 <h4>Fight complexity all the way</h4>
 
-<p>The sooner you realize that code is as much a part of the problem as a part of the solution, the sooner you can start coding less. If your component can fit into a class, don&rsquo;t encapsulate it with the newest MVC framework or instantiate an <a href="http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html">AbstractSingletonProxyFactoryBean</a> around it. Seriously, keep it as simple as possible &ndash; just not simpler.</p>
+<p>The sooner you realize that code is as much a part of the problem as a part of the solution, the sooner you can start coding less. If the solution to your problem can fit into a plain old class, don&rsquo;t encapsulate it with the newest MVC framework or instantiate an <a href="http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html">AbstractSingletonProxyFactoryBean</a> around it &ldquo;just because&rdquo;. Seriously, keep it as simple as possible &ndash; but not simpler.</p>
 
-<p>I may be a heretic here, but if you look objectively at the <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang of Four patterns</a>, you&rsquo;ll realize that most of them were designed to lessen the pain of adding more code to a project involving many developers by <em>adding more code</em>. And that&rsquo;s okay, remember they come from an era without Git, TDD and Continuous Integration. They can be powerful at times, but they often serve as fuel for the vicious cycle of software bloat. Use them wisely, but not for their own sake just or to look professional.</p>
+<p>I may be a heretic here, but if you look objectively at the <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang of Four patterns</a>, you&rsquo;ll realize that most of them were designed to lessen the pain of adding more code to a project involving many developers by <em>adding more code</em>. And that&rsquo;s okay, remember they come from an era without Git, TDD and Continuous Integration. They can be powerful at times, but they often serve as fuel for the vicious and self-serving cycle of software bloat. Use them wisely, but not for their own sake just or to look professional.</p>
 
 <h4>Continuous Rewrite</h4>
 
 <p>I&rsquo;m a big believer in Continuous Rewriting and it also <a href="http://www.citconf.com/wiki/index.php?title=Continuous_rewriting">seems to pick up adoption lately</a>. If instead of going all the way, you start out with a prototype that&rsquo;s <em>meant to be thrown away</em>, you achieve a lot of important goals:</p>
 
 <ul>
-<li>You free your mind from having to deliver the final solution and iterate <em>fast</em>.</li>
+<li>You free your mind from having to deliver the final solution and iterate <em>fast</em>, casually adding tests as you go.</li>
 <li>You protect yourself from abstracting too much and prevent adding &ldquo;fixtures&rdquo; for possible future use.</li>
-<li>You have solved a part of the problem already with working code.</li>
-<li>You learn a lot about the stuff that works and scales and the stuff that doesn&rsquo;t.</li>
+<li>You will have solved (a part of) the problem with working code and have validated the technical feasability of all aspects.</li>
+<li>You learn a <em>lot</em> about the stuff that works and scales and the stuff that doesn&rsquo;t.</li>
 </ul>
 
 
