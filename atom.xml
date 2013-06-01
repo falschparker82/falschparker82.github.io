@@ -4,7 +4,7 @@
   <title><![CDATA[Hamann Distributed]]></title>
   <link href="http://distributed.hamann.se/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
-  <updated>2013-06-01T23:13:04+02:00</updated>
+  <updated>2013-06-01T23:20:28+02:00</updated>
   <id>http://distributed.hamann.se/</id>
   <author>
     <name><![CDATA[Dominik Hamann]]></name>
@@ -55,7 +55,7 @@
 
 <p>Clearly separating your problem domain and constraints enables you powerful shortcuts. If a part of your internal tools does not need to be in the customer facing dashboard, you can save yourself half the development time by getting away without pixel-perfect design mockups, OAuth authentication, less QA, less testing&hellip; you get the idea.</p>
 
-<p>Generalization is usually the enemy of lean software. One of the best strategies is to force yourself to generalize &ldquo;on demand&rdquo;. Start with all assumptions and shortcuts neccessary to make your life easier <em>right now</em> and follow the old adage <a href="http://c2.com/cgi/wiki?ThreeStrikesAndYouRefactor">&ldquo;One, Two, Three, Refactor&rdquo;</a>. Don&rsquo;t worry too much about &ldquo;later&rdquo; &ndash; more often than you think, you&rsquo;ll come up later with an even more elegant solution anyway.</p>
+<p>Generalization is usually the enemy of lean software. One of the best strategies is to force yourself to generalize &ldquo;on demand&rdquo;. Start with all assumptions and shortcuts neccessary to make your life easier <em>right now</em> and follow the old adage <a href="http://c2.com/cgi/wiki?ThreeStrikesAndYouRefactor">&ldquo;One, Two, Three, Refactor&rdquo;</a>. Don&rsquo;t worry too much about &ldquo;later&rdquo; &ndash; more often than you think, you&rsquo;ll come up with an even more elegant solution anyway.</p>
 
 <h4>Challenge frameworks, libraries and abstraction layers</h4>
 
