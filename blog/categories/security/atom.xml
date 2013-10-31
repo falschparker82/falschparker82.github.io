@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Security | Hamann Distributed]]></title>
   <link href="http://distributed.hamann.se/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
-  <updated>2013-10-31T09:27:32+01:00</updated>
+  <updated>2013-10-31T09:28:30+01:00</updated>
   <id>http://distributed.hamann.se/</id>
   <author>
     <name><![CDATA[Dominik Hamann]]></name>
@@ -20,7 +20,7 @@
     <id>http://distributed.hamann.se/blog/2013/10/31/is-tox-secure-probably</id>
     <content type="html"><![CDATA[<p>So there&rsquo;s currently all the rage about the <a href="http://silentcircle.wordpress.com/2013/10/30/announcing-the-dark-mail-alliance-founded-by-silent-circle-lavabit/">Dark Mail Alliance</a>, re-inventing electronic mail in an easy to use, fully decentralized and cryptographically secure fashion. I think there are some brilliant minds on the project and I personally wish them the very best.</p>
 
-<p>A few weeks ago, there was the first true spiritual successor of the original Skype called <a href="http://tox.im/">Tox</a> in the making, and I can&rsquo;t even pretend this isn&rsquo;t great news. Finally the FOSS community wraps up DHT&rsquo;s, strong crypto, hole punching and even video &ndash; just like the original Skype &ndash; and puts it into a nice zero-configuration package. The project is getting well deserved publicity, crypto expertise and UX love, and is predestined to take off soon in times of PRISM-raised consumer awareness.</p>
+<p>A few months ago, there was the first true spiritual successor of the original Skype called <a href="http://tox.im/">Tox</a> in the making, and I can&rsquo;t even pretend all of this this isn&rsquo;t great news. Finally the FOSS community wraps up DHT&rsquo;s, strong crypto, hole punching and even video &ndash; just like the original Skype &ndash; and puts it into a nice zero-configuration package. The project is getting well deserved publicity, crypto expertise and UX love, and is predestined to take off soon in times of PRISM-raised consumer awareness.</p>
 
 <p>So why am I still not excited?</p>
 
