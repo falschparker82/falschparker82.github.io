@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Will Darkmail be secure? Probably, but it doesn't matter. - Hamann Distributed</title>
+  <meta name="author" content="Dominik Hamann">
+
+  
+  <meta name="description" content="So there&rsquo;s currently all the rage about the Dark Mail Alliance, re-inventing electronic mail in an easy to use, fully decentralized and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://distributed.hamann.se/blog/2013/07/31/is-tox-secure-probably">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Hamann Distributed" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41136721-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Hamann Distributed</a></h1>
+  
+    <h2>Making mistakes at scale so you don't have to.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:distributed.hamann.se" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-dom">About Dom</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Will Darkmail Be Secure? Probably, but It Doesn't Matter.</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-31T08:03:00+02:00" pubdate data-updated="true">Jul 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So there&rsquo;s currently all the rage about the <a href="http://silentcircle.wordpress.com/2013/10/30/announcing-the-dark-mail-alliance-founded-by-silent-circle-lavabit/">Dark Mail Alliance</a>, re-inventing electronic mail in an easy to use, fully decentralized and cryptographically secure fashion. I think there are some brilliant minds on the project and I personally wish them the very best.</p>
+
+<p>A few weeks ago, there was the first true spiritual successor of the original Skype called <a href="http://tox.im/">Tox</a> in the making, and I can&rsquo;t even pretend this isn&rsquo;t great news. Finally the FOSS community wraps up DHT&rsquo;s, strong crypto, hole punching and even video &ndash; just like the original Skype &ndash; and puts it into a nice zero-configuration package. The project is getting well deserved publicity, crypto expertise and UX love, and is predestined to take off soon in times of PRISM-raised consumer awareness.</p>
+
+<p>So why am I still not excited?</p>
+
+<p>Because we&rsquo;ve progressed to far. Laws worldwide have been hollowed out from steady lobbying since 9/11 &ndash; and it helps to look into the past to predict what will happen next.</p>
+
+<p>Tox and Darkmail are already on the shortlist of every TLA (three letter agency) worldwide. What happens if you use it? Guess what &ndash; <a href="http://www.forbes.com/sites/andygreenberg/2013/06/20/leaked-nsa-doc-says-it-can-collect-and-keep-your-encrypted-data-as-long-as-it-takes-to-crack-it/">you&rsquo;re officially making yourself a preferred target</a>.</p>
+
+<p>A great read on this topic is PHK&rsquo;s <a href="http://queue.acm.org/detail.cfm?id=2508864">&ldquo;More encryption is not the solution&rdquo;</a> that goes much more in depth than this article and I admit I couldn&rsquo;t have written it any better.</p>
+
+<p>But to phrase my concern in my very own words: You <em>can</em> still trust the math behind cryptography &ndash; but it doesn&rsquo;t matter at all. What you <em>can&rsquo;t</em> trust on in 2013 is your <a href="http://www.infoworld.com/d/mobile-technology/smartphone-makers-break-android-security-pre-installed-apps-180780">device manufacturer</a>, <a href="https://www.eff.org/nsa-spying">your carrier</a>, <a href="http://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml">your operating system</a> and <a href="http://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29">your e-mail provider</a>.</p>
+
+<p>And especially if you&rsquo;re a second-class citizen of the world (or you <em>are</em> from the US, <a href="http://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html?Post+generic=%3Ftid%3Dsm_twitter_washingtonpost">and your traffic somehow gets routed outside US jurisdiction</a>), the NSA won&rsquo;t give a shit on breaking all international laws to get to the messages you are sending and receiving. Not only did they <a href="http://usgovinfo.about.com/library/weekly/aa050602b.htm">self-excempt themselves from international jurisdiction</a> like just a few other states like Cuba or North Corea &ndash; they are not even liable to any of their actions <a href="http://www.legitgov.org/Guantanamo-detainees-cant-mention-torture">to their own people</a>.</p>
+
+<p>So who will use the new strong cryptography tools? Here&rsquo;s my prediction: 20% curious minds and technologists, 40% who have something to hide for good reason, 40% who have something to hide for bad reason. The big masses won&rsquo;t care. And as long as you&rsquo;re not using a more exotic device, carrier <em>and</em> operating system &ndash; preferably not even from your own IP as to not have blown your cover by the mere fact that you are using encrypted traffic &ndash; you can bet your ass they will go after you to have you <a href="http://www.theguardian.com/technology/2013/oct/09/silk-road-founder-new-york-charges">lynched in the public</a>.</p>
+
+<p>So what&rsquo;s coming up next? <a href="http://arstechnica.com/gadgets/2013/07/motorolas-8-core-x8-chip-gives-us-a-lesson-in-marketing-speak/">Voice processors</a>. After Facebook helped indexing anything that you expose to the public and Dropbox went along with implicit &ldquo;free photo sharing&rdquo; to the NSA, their next target will be everything you didn&rsquo;t even want to expose. Uploading hours and hours of voice communication is still too obvious by looking at your phone bills, but 24h of your verbal communication in an encrypted zipped text file after your device&rsquo;s built-in speech recognition (of course together with GPS location info) will just disappear in the data noise of always-connected &ldquo;factory&rdquo; and carrier daemons and is easier to process for real-time analysis anyway.</p>
+
+<p>Make no mistakes &ndash; the on-demand <a href="http://www.slate.com/blogs/future_tense/2013/06/07/nsa_surveillance_iphones_make_snooping_easy_for_spies_and_law_enforcement.html">&ldquo;roving bug&rdquo;</a> is already a reality since 2006 &ndash; this will only take it to the next level. Even switching your phone off <a href="http://www.stopcellphonetracking.com/nsa-can-still-track-your-cell-phone-even-if-its-turned-off/">will not protect you</a>, but rather make you a hard target again.</p>
+
+<p>Privacy in the near future will be at places where you don&rsquo;t have a smartphone &ndash; and nobody around you does either. It will be as hard to find as diamond and impossible to stop if we don&rsquo;t start acting on a political level soon. And to quote my favourite political satirist, Volker Pispers: &ldquo;Politicians in Germany always say: Why not collect all the fingerprints and save them in a database? The Spaniards do it as well! &ndash; Do you actually know why? It was done by a dictatorship (Franco) and fell into the hands into a democracy. No problem &ndash; except if it happens the other way around&hellip;&rdquo;</p>
+
+<p>If you&rsquo;re not scared yet, do yourself a favor and watch the ingenious <a href="http://www.imdb.com/title/tt0405094/">&ldquo;The lives of the others&rdquo;</a> to get a grip about what a real dictatorship managed to do with 1980&rsquo;s technology already. Put more than thirty years of technology evolution on top and you&rsquo;ll be scared shitless. If you want to know why the Germans are always at the forefront of privacy protest, that&rsquo;s why.</p>
+
+<p>What&rsquo;s going to stop all of this? Not Tox. Not Darkmail. Simply people standing up all over the world to stop the madness.</p>
+
+<p>And honestly &ndash; I don&rsquo;t see that coming.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Dominik Hamann</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-31T08:03:00+02:00" pubdate data-updated="true">Jul 31<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/encrption/'>Encrption</a>, <a class='category' href='/blog/categories/security/'>Security</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/01/you-probably-have-too-much-code/" title="Previous Post: You probably have too much code.">&laquo; You probably have too much code.</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/31/the-horrifying-state-of-egovernment-in-germany/" title="Next Post: The horrifying state of eGovernment in Germany">The horrifying state of eGovernment in Germany &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/31/the-horrifying-state-of-egovernment-in-germany/">The Horrifying State of eGovernment in Germany</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/31/is-tox-secure-probably/">Will Darkmail Be Secure? Probably, but It Doesn't Matter.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/01/you-probably-have-too-much-code/">You Probably Have Too Much Code.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/31/cache-invalidation-made-easy/">Cache Invalidation Made Easy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/22/careful-with-cassandra-upserts/">Careful With Cassandra Upserts</a>
+      </li>
+    
+  </ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Dominik Hamann -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'hamanndistributed';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://distributed.hamann.se/blog/2013/07/31/is-tox-secure-probably/';
+        var disqus_url = 'http://distributed.hamann.se/blog/2013/07/31/is-tox-secure-probably/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
