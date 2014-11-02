@@ -23,16 +23,22 @@
         <lastmod>2013-10-31T09:28:17+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://distributed.hamann.se/blog/2014/11/02/the-day-my-cable-provider-killed-me/
+        </loc>
+        <lastmod>2014-11-02T22:10:40+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://distributed.hamann.se/about-dom/</loc>
         <lastmod>2013-06-01T22:35:46+02:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/archives/</loc>
-        <lastmod>2013-10-31T09:28:17+01:00</lastmod>
+        <lastmod>2014-11-02T22:10:40+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/</loc>
-        <lastmod>2013-10-31T09:28:17+01:00</lastmod>
+        <lastmod>2014-11-02T22:10:40+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/robots.txt</loc>

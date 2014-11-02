@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: CustomerService | Hamann Distributed]]></title>
+  <link href="http://distributed.hamann.se/blog/categories/customerservice/atom.xml" rel="self"/>
+  <link href="http://distributed.hamann.se/"/>
+  <updated>2014-11-02T22:11:25+01:00</updated>
+  <id>http://distributed.hamann.se/</id>
+  <author>
+    <name><![CDATA[Dominik Hamann]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The day my cable provider killed me]]></title>
+    <link href="http://distributed.hamann.se/blog/2014/11/02/the-day-my-cable-provider-killed-me/"/>
+    <updated>2014-11-02T21:36:00+01:00</updated>
+    <id>http://distributed.hamann.se/blog/2014/11/02/the-day-my-cable-provider-killed-me</id>
+    <content type="html"><![CDATA[<h2>or: Eight lessons in avoiding customer service disasters</h2>
+
+<p>Last Sunday, my internet suddenly stopped working. I didn&rsquo;t think too much of it, but when I reset my router as usual and it still wasn&rsquo;t working, I was getting curious. Turned out, my TV and my phone didn&rsquo;t work as well. Now, I was definitely angry. I called up the tech support of Kabel Deutschland, my cable provider. After 10 minutes in the line, I gave up and went to bed.</p>
+
+<h4>Lesson 1)</h4>
+
+<h4>Try to stay accessible for your customers. Of course, this isn&rsquo;t always possible or economical &ndash; but it might be helpful to separate urgent technical issues from contract support and prioritize the former. Especially if you are in a position to have significant impact on your customers' daily life.</h4>
+
+<p>Monday morning, I called tech support again. I asked why none of my devices were working anymore and the agent looked into my case. She mumbled something about a &ldquo;horrible mistake&rdquo; but she&rsquo;s sorry and everything should be working again within 24 hours. I sighed and left for work, leaving my wife at home alone with our daughter &ndash; and no internet or phone whatsoever.</p>
+
+<h4>Lesson 2)</h4>
+
+<h4>If you let your customer service agents promise something to the client, make sure to keep it. If you can&rsquo;t keep it, don&rsquo;t let them promise anything specific.</h4>
+
+<p>24 Hours later, there was still no internet. When I got to work, my wife sent me a message. Kabel Deutschland had sent a letter, offering their condolences to my death (!) and cancelling all my contracts. Now it was finally getting obvious what the &ldquo;horrible mistake&rdquo; was: I had sent a marriage certificate to them because I had changed my family name &ndash; and someone obviously mistook it for a death certificate.</p>
+
+<h4>Lesson 3)</h4>
+
+<h4>If your customer support is able to make high impact decisions, make sure there are basic protections against accidental or malicious misuse. It doesn&rsquo;t even have to be a four-eye principle, sometimes a checkbox &ldquo;are you sure&rdquo; can do the trick. When you&rsquo;re taking potentially harmful actions against your customers, be transparent and try to inform them early on, preferably on real-time channels.</h4>
+
+<p>I was a little irritated and slightly bemused, but I wasn&rsquo;t too that mad about the mistake yet. I started my career in customer support and know how little people are paid in this industry and how much they have to do. I was mad though about how they dealt with it.</p>
+
+<h4>Lesson 4)</h4>
+
+<h4>If you are dealing with customers and make mistakes, listen to the late Dale Carnegie: Admit mistakes on the spot if you do them and apologize &ndash; it will make you much more human and believable. Don&rsquo;t try to put things under the rug.</h4>
+
+<p>My amusement passed when my wife had to send important documents from home, rushing to neighbors with a sick kid just to plug her computer in. She called tech support from her phone, this time escalating to second level support. The agent couldn&rsquo;t see any of the other calls made the days before, but was &ldquo;shocked&rdquo;, apologized and promised again that everything would be working soon, but it would take some time. By now we were writing down names just in case.</p>
+
+<h4>Lesson 5)</h4>
+
+<h4>Get a CRM. If you have one, use it. If you&rsquo;re using it in first level support, share it with second level support and tech support. Get these basic things straight, before you start to get into the business of dealing with end customers.</h4>
+
+<p>One more day passed. At that time, worried messages started to come in from all over our family because our phone line was still dead. My wife called tech support again, escalating again. They kept asking for more &ldquo;patience&rdquo;, because they would have to restart the contract and reprovision all our devices from anew. We kept waiting. Both our monthly mobile internet limits were exhausted.</p>
+
+<h4>Lesson 6)</h4>
+
+<h4>As an engineer running high-availability platforms, we always have a rollback plan when we deploy new software. So, when things go wrong (and they do go wrong), we can have the old state of the platform back within minutes. My cable provider was obviously completely unprepared. Switching everything off was done within minutes, reinstating the contract made them struggle.</h4>
+
+<p>The next day was Friday. I had some work to finish on the weekend as well and was hellbent to get the company to get its act together. I called tech support, directly escalated to second level and told the lady: &ldquo;Look, you guys pronounced me dead on Monday and cancelled my contract. My wife is at home with a sick kid, completely cut off from the outer world since Monday. If you don&rsquo;t reprovision my modem within the very next 2 hours, I&rsquo;m going to clear the situation with your head of PR.&rdquo; &ndash; &ldquo;Yeah, well, you can do that, but first, give me your contract number.&rdquo;</p>
+
+<p>In fact, I had entered the number before starting the call. (see lesson 5 for helpful remedies)</p>
+
+<p>I gave her the number and she kept me in the line for 5 minutes. After that, she told me that &ldquo;they are sorry and they are doing everything they can&rdquo;. I should have some more patience, because she could not &ldquo;accelerate anything&rdquo;. I told her my patience was completely over and that she had exactly one hour and fifty five minutes to reinstate my contract &ndash; and if she did it in person. I hung up.</p>
+
+<h4>Lesson 7)</h4>
+
+<h4>Have a priority line in order to deal with urgent requests in your technical support queue. Some requests might be too important to wait in line together with all the others.</h4>
+
+<p>In contrast to Kabel Deutschland, I keep my promises. Three and a half hours later, after confirming our wi-fi at home was still dead, I wrote a quick personal message to their Head of PR, telling him that I will go public with this story if he didn&rsquo;t answer that very day.</p>
+
+<p>He didn&rsquo;t.</p>
+
+<h4>Lesson 8)</h4>
+
+<h4>Take your customers serious. Enough said.</h4>
+
+<p>I still have no internet. Let&rsquo;s see what Monday brings.</p>
+]]></content>
+  </entry>
+  
+</feed>
