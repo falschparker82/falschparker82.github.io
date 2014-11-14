@@ -2,25 +2,25 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/05/22/careful-with-cassandra-upserts/</loc>
-        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy/</loc>
-        <lastmod>2013-05-31T09:06:58+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/06/01/you-probably-have-too-much-code/</loc>
-        <lastmod>2013-06-01T23:35:37+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>
             http://distributed.hamann.se/blog/2013/08/31/the-horrifying-state-of-egovernment-in-germany/
         </loc>
-        <lastmod>2013-09-01T11:11:11+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/2013/10/31/is-tox-secure-probably/</loc>
-        <lastmod>2013-10-31T09:28:17+01:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>
@@ -29,23 +29,27 @@
         <lastmod>2014-11-02T22:10:40+01:00</lastmod>
     </url>
     <url>
+        <loc>http://distributed.hamann.se/blog/2014/11/14/dear-lucas/</loc>
+        <lastmod>2014-11-14T17:43:47+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://distributed.hamann.se/about-dom/</loc>
-        <lastmod>2013-06-01T22:35:46+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/blog/archives/</loc>
-        <lastmod>2014-11-02T22:10:40+01:00</lastmod>
+        <lastmod>2014-11-14T17:43:47+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/</loc>
-        <lastmod>2014-11-02T22:10:40+01:00</lastmod>
+        <lastmod>2014-11-14T17:43:47+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/robots.txt</loc>
-        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
     <url>
         <loc>http://distributed.hamann.se/search.html</loc>
-        <lastmod>2013-05-24T19:36:26+02:00</lastmod>
+        <lastmod>2014-02-21T12:32:00+01:00</lastmod>
     </url>
 </urlset>

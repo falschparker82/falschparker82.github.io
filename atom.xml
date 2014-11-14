@@ -4,7 +4,7 @@
   <title><![CDATA[Hamann Distributed]]></title>
   <link href="http://distributed.hamann.se/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
-  <updated>2014-11-02T22:11:25+01:00</updated>
+  <updated>2014-11-14T17:44:11+01:00</updated>
   <id>http://distributed.hamann.se/</id>
   <author>
     <name><![CDATA[Dominik Hamann]]></name>
@@ -12,6 +12,181 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dear Lucas]]></title>
+    <link href="http://distributed.hamann.se/blog/2014/11/14/dear-lucas/"/>
+    <updated>2014-11-14T16:31:00+01:00</updated>
+    <id>http://distributed.hamann.se/blog/2014/11/14/dear-lucas</id>
+    <content type="html"><![CDATA[<p>Yesterday, I found an E-Mail in my Inbox.</p>
+
+<blockquote><p>Very impressive profile, Dominik! Any advice for a relatively young programmer who would like to be someone with similar skills in the next 10 years?</p><footer><strong>Lucas W.</strong></footer></blockquote>
+
+
+<p>Now, I admit I was a little flattered. I really don&rsquo;t think I&rsquo;m that good, but looking back at the last six years and realizing again how I went from a broke, bipolar and triple failed university student to Lead Architect and eventually CTO and Co-Founder within this short timeframe, I can&rsquo;t help to think that there must be <em>something</em> I did right and I could share with others. My impostor syndrome would beg to differ, but in fact there wasn&rsquo;t so much magic involved &ndash; but lots of hard work, meeting the right people (among many more wrong ones) and taking opportunities that popped up along the way, even if they had some risk involved. I could totally do it and so can you.</p>
+
+<p>My first intention was answering him personally back on Linked.in &ndash; but from my experience here&rsquo;s one tip for starters already: If someone asks you a question that many more people might have, do yourself a favor and write it down for posterity. Put the answer into your code, wiki or blog for everyone to read for reference and you might make more than just one person&rsquo;s day.</p>
+
+<p>So here&rsquo;s my advice to you, Lucas. I&rsquo;m sorry, there is no TL;DR. There are no shortcuts. This is the real deal.</p>
+
+<h2>Ambition and Culture</h2>
+
+<p>Lucas, you asked me for a 10 year career path. I think you <a href="http://qr.ae/mFTW7">should be bold and shoot for what you can achieve in one year instead</a>. Before I go into any of the numerous technical aspects of your question, I think there is one important lesson for you to take so far already &ndash; which is: Don&rsquo;t stand still. The fastest way to learn ANYTHING is to learn it from people who already know what you want to know &ndash; and are great at both teaching and learning. You need to surround yourself with those people if you really mean it. These are always people who are &ldquo;better than you&rdquo;, and you should try to get them to mentor you.</p>
+
+<p>How to do it? Simple. Approach them even if you&rsquo;re not working directly with them. Be nice, interested and try to solve some of their problems on your own. Ask them good questions and come back when you&rsquo;ve done your homework to ask some more. Don&rsquo;t ever ask them stupid questions, which you could answer yourself by Googling. Don&rsquo;t ever ask a question twice. You know you&rsquo;ve found a good mentor when you get continuously harder tasks and candid feedback from them. Within your company, try to get into the fastest and most respected team. Whenever you think your learning curve has peaked and is on its way down, look around for new opportunities.</p>
+
+<p>In some great companies, it&rsquo;s possible to evolve into ever more challenging jobs with increasing responsibility, but unfortunately often it&rsquo;s not. When you feel like you&rsquo;re hitting the glass ceiling, move on and look for something else to continuously broaden your horizon and stretch outside your comfort zone.</p>
+
+<h2>Education</h2>
+
+<p>High degrees and certificates will only take you so far in programming and often aren&rsquo;t worth the hassle. I once did the Zend Certified PHP Engineer to prove I wasn&rsquo;t a total failure in programming, but I skipped the expensive course and just sat down with a book and some test questions to prepare. More importantly, after years on the other side of the hiring table I&rsquo;ve learned that people with the most certificates and the highest degrees are more often than not the least productive ones, because somehow, a lot of them seem to rest on their past successes and stop learning.</p>
+
+<p>Remember, you&rsquo;ll be hired for your papers, but you&rsquo;ll be promoted for your output &ndash; so don&rsquo;t spend too much time on the former.</p>
+
+<h2>Read Hacker News</h2>
+
+<p>Why <a href="https://news.ycombinator.com/">Hacker News</a>? Quite simply, it&rsquo;s where some of the best people meet and share their knowledge about the whole technology ecosystem. There are other aggregators, maybe even in your native language. However, you should really start embracing English as your work language if you didn&rsquo;t already and the best way to become proficient is reading and writing a lot.</p>
+
+<p>Some people say Hacker News has become boring and repeating. These are usually the people who have become experts themselves by reading there for years &ndash; I still find lots of new, interesting and important information about technology and startups there.</p>
+
+<p>Read about half an hour every day to stay on touch and learn something new, then get on to work on other things. <a href="http://bennesvig.com/youve-probably-read-enough/">Reading more won&rsquo;t make you better</a> after a certain point, only practice will.</p>
+
+<h2>How to learn</h2>
+
+<p>I&rsquo;ll give you a truckload of things to learn below, and learning is the most important thing you will ever do as a developer. But remember that learning works best (some say: only) <a href="http://health.tki.org.nz/Key-collections/Curriculum-in-action/Making-Meaning/Teaching-and-learning-approaches/Experiential-learning-cycle">as a spiral</a>. You&rsquo;ll learn something, not quite understanding everything and move on to the next topic. Maybe you&rsquo;re a little frustrated. This goes on and on until you come back to the first topic. You&rsquo;ll look at the topic again and see that a lot of things explain themselves through the new connections, abstractions and transfers you made on your detours. This spiral will continue forever. If you&rsquo;re not embarrassed by work you did years ago, you probably haven&rsquo;t evolved or developed much.</p>
+
+<p>Don&rsquo;t try to learn any of the topics below &ldquo;fully&rdquo; before moving on. It&rsquo;s simply not possible. Try to get one focus area every day and rotate.</p>
+
+<p>Get used to the feeling of not understanding certain things. It&rsquo;s normal. You will eventually.</p>
+
+<p>Get used to the feeling of not knowing the exact paths to the goal you&rsquo;re after. It&rsquo;s normal. You&rsquo;ll find out on the way.</p>
+
+<h2>The Mix</h2>
+
+<p>Then there&rsquo;s &ldquo;the learning mix&rdquo;. It&rsquo;s the optimium mix between reading, working, toying and communication.</p>
+
+<p>Try to get the balance right, because combining all four belong to becoming a great developer.</p>
+
+<p>You need to read, because there is a lot of information that you need in order to make good choices in every possible field.</p>
+
+<p>You need to work because only applying your knowledge to a concrete codebase will complete the learning cycle and give you actual experience.</p>
+
+<p>You need to toy and play. No, I&rsquo;m not kidding. This is also work but it&rsquo;s disguised in a much more undirected format, often with no clear goal at all. This is all about looking behind the curtains, trying unusual solutions, long shots which most probably wouldn&rsquo;t ever work (and finding out why). Finding shortcuts or doing things with frameworks, languages or technologies that are not used at (or not even recommended for) &ldquo;daily&rdquo; work. Lots of people &ndash; especially women &ndash; are conditioned quite early by society not to needlessly toy around but to be &ldquo;serious&rdquo; &ndash; yet toying around is essential to becoming a great developer.</p>
+
+<p>It&rsquo;s really about expanding your horizon and it&rsquo;s even appropriate to do some of these things at work: Small tools and one-off tasks are great use cases for more experimental technology. Some of the more time consuming things you should do better do in your free time.</p>
+
+<p>Last but not least, you need to communicate. A lot. You need to ask, tell, understand and be understood. Also, get the mix right. You should hang out about one third within your core technology group (other devs, mentors, bosses), one third within extended technology (other teams, admins, BI guys, meetups) and one third outside of technology to understand other business functions and their needs better.</p>
+
+<p><a href="http://keithferrazzi.com/products/never-eat-alone">Lunch is usually your friend.</a></p>
+
+<h2>Learn 10 Programming languages over the years</h2>
+
+<p>Why ten? Well, I just pulled a number out of my hat that feels about just right to start to get an intuitive grasp on code. You&rsquo;ll learn that all programming languages share some features that are common but all have distinctive advantages and disadvantages in different situations. It also helps you get over stupid language wars and see the other sides of the table. It&rsquo;s really about developing a technology &ldquo;feeling&rdquo; that will help you make good decisions later. Make sure you get some diversity again.</p>
+
+<p>Choose something low level like C or assembler, something high level with a framework (Rails, Django), something object-oriented (Java, Objective-C), a functional language (Haskell, Clojure), something mixed-paradigm (Go, Scala), something arcane (COBOL, BASIC) and something brand-new or experimental (Rust, Nimrod). Choose a language targeted towards certain niches (Julia, Ada, Autohotkey &lt;&ndash; don&rsquo;t laugh, it was my venture into programming), and maybe something exotic like Brainfuck or LOLCODE. Be sure to learn JavaScript and why it&rsquo;s both ingenious and awful at the same time. Learn at least the basics of SQL, HTML and CSS &ndash; I don&rsquo;t count them as real languages, but you&rsquo;ll come across them pretty much everywhere, even if you don&rsquo;t see yourself as a &ldquo;web developer&rdquo;.</p>
+
+<p>You don&rsquo;t have to learn them all to full proficiency, but you should try to get something specific done in every one of them and move along. Stay around some more time with languages you like, learning them at a deep level &ndash; and leave others behind, mentally noting <em>why</em> you didn&rsquo;t like them. This is really subjective. I for example can&rsquo;t stand Lisp dialects because I find the parentheses ugly and the syntax unreadable. You will find other programmers totally excited about its expressiveness.</p>
+
+<p>I won&rsquo;t tell you PHP is a bad choice, <a href="http://whydoesitsuck.com/why-does-php-suck/">lots of others will happily do that for me</a>. Facebook, Wikipedia and Wordpress are examples showing you that the language works. Yet not everything which is widespread is great as well. Don&rsquo;t believe others, find out yourself. PHP used to make me happy, fast and productive in my early days, but it doesn&rsquo;t anymore.</p>
+
+<p>Your preferences will change as you get more experienced. Often, beginners start with dynamic languages and hate types in the beginning (mostly because you don&rsquo;t fully understand them and they&rsquo;re a hassle to work around), yet start to appreciate them when you get more experienced and work in larger teams. YMMV.</p>
+
+<h2>Learn about data structures and databases</h2>
+
+<p>Data is everything you will ever create and move around in IT. If you are a self-made programmer like me, you will have most headache but also lots of leverage with understanding data structures. This is the boring stuff of every CS class which you cram into your head and then forget &ndash; but it&rsquo;s only really interesting if you come across concrete problems where you&rsquo;re running into the limits of your data structures. You should definitely know what sets, maps, arrays, trees, tries and lists are, how they look in computer memory and what their complexity cost in Big-O-Notation is. I found it much easier though to learn them on the job when I actually used them.</p>
+
+<p>Databases are important as well. If you don&rsquo;t know anything about databases yet, <a href="https://alpha.app.net/tonymillion/post/18431717">don&rsquo;t be a hipster and just use Postgres</a>. You&rsquo;ll be sure to learn something solid, performant and generic which will stick around. But if you&rsquo;re already planning beyond Gigabytes of data, hundreds of concurrent connections, below a hundred milliseconds of latency or all of the above, you need to understand more scalable database technologies and their limitations. Read about MapReduce, DynamoDB, BigTable, sharding, elasticity, indexes, immutability, ACID and BASE, and these are only the very beginnings.</p>
+
+<p>To really make good technology decisions, you need to talk to your business about the eventual requirements of the system, because you WILL have to make some tradeoffs eventually and you should be aware of them. Think of good questions before you try to find answers, i.e. &ldquo;How often will data get updated?&rdquo;, &ldquo;How much downtime is acceptable in a day / year / minute?&rdquo;, &ldquo;How fresh does the data need to be?&rdquo;. I can give you 20 of these questions drilling down into your real needs right now, and all of this will reflect in the architectural choice I will make.</p>
+
+<p>I was once asked by a CEO why we couldn&rsquo;t just &ldquo;put everything into a really fast database and then get results from arbitrary queries in realtime&rdquo; (note that he was talking about 500 GB a day). I told him that he could sell our company for several billions if we had that technology.</p>
+
+<h2>Learn about your craft</h2>
+
+<p>In the middle of <a href="https://www.codefellows.org/blog/this-is-why-learning-rails-is-hard">this page</a>, you will find a mind map about everything you should master as a Rails developer. Forget the &ldquo;Rails&rdquo; part for now, 80% of this map describes the neccessary skillset for every language and framework you can think of. You should spend at least a few hours for every single leaf of this tree to understand the concepts behind them. A developer who can program perfectly but can&rsquo;t use VCS, Continuous Integration and Testing in an Agile Environment is pretty much useless in 2014.</p>
+
+<p>Really, good craftsmanship cannot be underestimated. You should choose to (deeply) learn a powerful editor like Vim/Emacs/Sublime/IDEA and learn 10 finger typing. I bought <a href="http://www.getdigital.de/Blank-Keyboard.html">this</a> keyboard and learned it the hard way &ndash; within 2 weeks and at the venerable age of 26 years. Both measures roughly tripled my coding &amp; writing performance and I didn&rsquo;t ever look back.</p>
+
+<h2>Learn about people</h2>
+
+<p>Dealing with people is the single most undervalued skill in IT with the most leverage. This is both the shortest and the longest chapter of this text, because everything that needs to be said about this topic has been <a href="http://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People">written 78 years ago already</a> &ndash; and the only thing you should really do is get a copy and read it. Don&rsquo;t be put off by the title, remember this book is as old as your grandparents, yet people didn&rsquo;t change a single bit&hellip;</p>
+
+<h2>Learn about your business</h2>
+
+<p>Someone who can take any spec and write it down into working, readable and performant code is a great programmer.</p>
+
+<p>Someone who can take any business problem and write it down into a well-modelled spec before coding it down is a great engineer.</p>
+
+<p>You&rsquo;re free to stop at being a good programmer, but good engineers are paid double the price. Really, the top three skills you can learn if you want to progress your career are</p>
+
+<ul>
+<li>Taking a business problem and turn it into a working software model</li>
+</ul>
+
+
+<p>There are lots of good ideas out there, yet execution of all of them depend on your technical transfer skills. Nothing is quite as important as learning to read the language of business people, form them into a domain model and explain and reevaluate the model together with the business people before even writing the first line of code. A great intro to this topic are the first chapters of Eric Evans&#8217; <a href="http://www.amazon.de/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215">&ldquo;Domain Driven Design&rdquo;</a>. This also means that you should get familiar with the business itself that you&rsquo;re currently in. Learning which KPIs are important and have the most impact to your business will help you find much better technical solutions.</p>
+
+<ul>
+<li>Explaining technical dependencies and challenges to non-technical people</li>
+</ul>
+
+
+<p>It&rsquo;s easy to underestimate <a href="http://xkcd.org/1425/">how hard this really is</a>. Yet, the ability to explain everything to a 5-year-old and negotiating features in order to keep down complexity are incredibly important for you to learn. A great example I had: Product Managment specified that they wanted a user that had seen a banner not to see it more than five times within the following 24 hours. I asked if it would be okay to only show the banner to them five times per 24-hour-interval. They said &ldquo;but that&rsquo;s almost the same!&rdquo;.</p>
+
+<p>Yes. From a product side this was almost equal, but of course technically, the latter was much less complex, saving lots of programming hours and computing complexity by simply rethinking the specs and providing an alternative. Learn how to teach the concepts of technical debt, technical investment and software rot and incorporate them into your estimates. Speaking of which&hellip;</p>
+
+<ul>
+<li>Making good estimations</li>
+</ul>
+
+
+<p>Estimating is usually one of the things even great programmers learn last. Yet it is crucially important to know for the business how long things will take. Learn to express yourself in terms of complexity and uncertainty. It&rsquo;s helpful to continuously practice the estimate-observe loop with your own tasks and also learn about how large and complex projects are fundamentally different to a one-man-show. A great rule of thumb for larger projects from <a href="http://en.wikipedia.org/wiki/The_Mythical_Man-Month">&ldquo;The mythical man-month&rdquo;</a> which I often use is: 1/3 of the time is spent on design, &frac14; on early testing and debugging, &frac14; on late integration and acceptance testing and only 1/6 (!) on actual coding.</p>
+
+<p>Take this into account and multiply the resulting time by 1.2 for every team member before dividing through the team to account for communication losses. If you have time, read the whole book for some great insights on planning software projects. Same thing here: You won&rsquo;t believe how accurate most parts of a 40 year old book on software development still are today&hellip;</p>
+
+<h2>Learn to glue</h2>
+
+<p>30 years ago, if you wanted to write an app, you wrote everything yourself, from the device driver routines to the graphics buffer. Fortunately, thanks to the Github revolution, nowadays you can find an open source package for just about anything. And systems are so much more complex now that you&rsquo;d be stupid not to. Not just that &ndash; most of the times, these libraries are written by people smarter or more experienced than you are.</p>
+
+<p>On the other hand, with great power comes great responsibility. These packages often will not exactly do what you want or what you need and you&rsquo;ll have to make important decisions. Do you commit back to the project and hope for a pull request? Do you integrate parts of it as an API? Sometimes it&rsquo;s a good choice to go for a full stack framework. Other times it&rsquo;s better to hand-pick and compose some smaller packages to achieve success.</p>
+
+<p>On top of that, you will have to manage the dependencies as well. They will get out of date, glitches and security bugs will pop up and often they might have changed their interface inbetween so you have to change all your code in order to upgrade. Some code will rot and get abandoned. If it&rsquo;s a small library, that might be okay, but if it&rsquo;s your CMS or the fancy bleeding-edge framework you built your website on back then, you might be screwed.</p>
+
+<p>If on the other hand you choose to build everything yourself and end up with a huge stack that&rsquo;s <a href="http://en.wikipedia.org/wiki/Not_invented_here">reinventing the wheel</a> instead of using standard components, it&rsquo;s getting continuously harder to onboard people, up to the point where I&rsquo;ve seen this literally killing companies.</p>
+
+<p>All these problems require a completely new skill, which is searching, composing and glueing software components to your own stack the right way. There&rsquo;s even a <a href="http://gluecon.com/">conference solely dedicated to this topic</a>, that&rsquo;s how hard this is in itself. If you have several repositories doing what you want, you need to be able to estimate their traction by evaluating the number of stars and forks, frequency of pull requests, number of open issues, commit frequency and date of last commit and if it is maintained by a company (yet not too much to cripple it), just to mention a few.</p>
+
+<p>Get good at this stuff and if you really decide that you write a component yourself, you should already know the three best repositories closest to solving your problem and how they are not cutting it quite yet for your use case.</p>
+
+<h2>Learn DevOps</h2>
+
+<p>In the days of Infrastructure as a Service, it&rsquo;s become so easy to start up your own server / cluster / database, that there is simply no excuse not to try it yourself. The entry barrier is so low through services like AWS or Heroku, that you need to be proficient in provisioning a prototyping environment yourself. Some people &ldquo;admire&rdquo; my Hadoop skills and complain they never &ldquo;had the opportunity to work with it&rdquo; before. I call BS. For just a few dollars, you can run your own map-reduce jobs on Amazon EMR and experiment with huge freely available open-data test sets if you were really interested in it. Get an account NOW and understand which problems the dozens of AWS services solve before you try to roll your own.</p>
+
+<p>Learning how to properly operate, monitor, deploy, secure and maintenance real server systems &ndash; even superficially &ndash; will get you a much deeper understanding on how your code will actually run and perform when in the wild.</p>
+
+<p>Also, you&rsquo;ll get some humility for Admins who do this stuff full time.</p>
+
+<p>Learn about technologies like Vagrant, Docker and Fig and their underlying concepts of <a href="http://blog.codeship.com/immutable-infrastructure/">immutable infrastructure</a> to get into the modern mindset of <a href="http://12factor.net/">12factor</a> apps.</p>
+
+<p>Yes, all of this didn&rsquo;t even exist in 2011.</p>
+
+<p>Yes, it&rsquo;s hard to continuously follow these important trends and keep up with the pace. You signed up for the ride.</p>
+
+<h2>Go on from here</h2>
+
+<p>Lots of what I wanted to say as well has been already said &ndash; for some more good stuff that I didn&rsquo;t cover, go over here:</p>
+
+<p><a href="http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer">http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer</a></p>
+
+<p>I couldn&rsquo;t have said these things any better myself, thanks Peter.</p>
+
+<p>Thanks for reading and I&rsquo;m looking forward to see what your career has to offer.</p>
+
+<p>Cheers,</p>
+
+<p>Dom</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The day my cable provider killed me]]></title>

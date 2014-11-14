@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Architecture | Hamann Distributed]]></title>
-  <link href="http://distributed.hamann.se/blog/categories/architecture/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Career | Hamann Distributed]]></title>
+  <link href="http://distributed.hamann.se/blog/categories/career/atom.xml" rel="self"/>
   <link href="http://distributed.hamann.se/"/>
   <updated>2014-11-14T17:44:11+01:00</updated>
   <id>http://distributed.hamann.se/</id>
@@ -184,132 +184,6 @@
 <p>Cheers,</p>
 
 <p>Dom</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You probably have too much code.]]></title>
-    <link href="http://distributed.hamann.se/blog/2013/06/01/you-probably-have-too-much-code/"/>
-    <updated>2013-06-01T17:06:00+02:00</updated>
-    <id>http://distributed.hamann.se/blog/2013/06/01/you-probably-have-too-much-code</id>
-    <content type="html"><![CDATA[<p>There&rsquo;s a recent trend in the software industry that I&rsquo;m watching with a little concern. Countless new tools for static code analysis and &ldquo;automated software review&rdquo; are popping up on the market and being in a technology leadership position at a successful startup myself, I&rsquo;m now getting pitched for this stuff on a regular basis. Even though I&rsquo;m absolutely dedicated to code quality, I&rsquo;m very skeptical at these tools &ndash; because, in my humble opinion, they are trying to solve the wrong problem. There&rsquo;s an uncomfortable truth that I&rsquo;d love to tell all companies seriously seeking to relieve their code quality pains by using these methodologies:</p>
-
-<p><blockquote><p>You probably have too much code.</p></blockquote></p>
-
-<p>The problem at the root of this issue is a decades-old industry focus and incentivization on <em>producing</em> code, not on taking it away. If you give a problem to a developer, there&rsquo;s a usual and deeply embedded Pavlov reflex of solving it by <em>writing</em> or <em>adding</em> code. It&rsquo;s what a software developer is paid for anyway, right?</p>
-
-<h4>Less is more</h4>
-
-<p>All these are signs of a dangerous culture that encourages software bloat, steadily leading to slowed software development up to a state of total unmaintainability. If you don&rsquo;t believe me, go <a href="http://www.sdn.sap.com/irj/scn/go/portal/prtroot/docs/library/uuid/80ba792f-5e2a-2f10-0594-89315609e177?QuickLink=index&amp;overridelayout=true&amp;55959128966099">take a look at the 3.5 gigabyte (!) binary of SAP BusinessObjects Explorer</a>. I&rsquo;ve seen so many companies grinding to a halt by throwing software layers on top of each other, that I&rsquo;ve coined a name for it: <em>Death by Abstraction</em>.</p>
-
-<h3>Why you need less code</h3>
-
-<h4>Less code &ndash;> less errors. Period.</h4>
-
-<p>There are recent studies showing once and for all that the density of software errors is <a href="http://www.lsmod.de/~bernhard/cvs/text/dipl/papers/p42-basili.pdf">most strongly correlated by the number of lines in the module, <em>regardless of the language used</em></a>. Having less code makes projects stabler, leads to better test coverage and simplifies operations. It also helps to use a language that is as terse as possible (we love Coffeescript).</p>
-
-<h4>Less I/O</h4>
-
-<p>Code doesn&rsquo;t just have to be written &ndash; it has to be read as well. Reading and understanding code takes time, lots of it. (Paradoxically, large, complex and fragmented code bases tend to have a lot of large, complex and fragmented documentation to read on top.)</p>
-
-<p>Time however is usually one of the most valuable and rare ressources in the software industry.</p>
-
-<p>Having less code helps you onboarding new developers on a project and getting productive way faster, and in the same way also helps with turnover. Most importantly, it prevents complexity by &ldquo;code fear&rdquo;: If people can&rsquo;t understand other peoples' code, they tend to abstract it away. This is the exact reason monstrosities like <a href="http://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture">CORBA</a> were born in the first place, feeding the code-adding cycle once again. I&rsquo;ve been in companies where projects had to be abandoned because of people being scared to touch a recently &ldquo;disappeared&rdquo; employee&rsquo;s source code. Writing less codes helps preventing such disasters in the first place.</p>
-
-<h3>How to get and write less code</h3>
-
-<h4>Incentivise and encourage a &ldquo;taking away&rdquo; mentality</h4>
-
-<p>I can&rsquo;t overstate how important it is to continuously fight against the code-adding mentality itself that still resides in most developer&rsquo;s heads. Put into your core values, acceptance criteria and processes that taking code away is just as important (if not even slightly more) than writing it. Every net code line and file added is a maintenance liability.</p>
-
-<h4>Simplify requirements</h4>
-
-<p>If you are designing a software component to solve all of your current and future problems at once, <a href="http://en.wikipedia.org/wiki/Second-system_effect">you&rsquo;re setting yourself up for failure</a>. Solve the problem at hand and nothing more &ndash; if in doubt, <a href="http://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">you ain&rsquo;t gonna need it</a>.</p>
-
-<p>Clearly separating your problem domain and constraints enables you powerful shortcuts. If a part of your internal tools does not need to be in the customer facing dashboard, you can save yourself half the development time by getting away without pixel-perfect design mockups, OAuth authentication, less QA, less testing&hellip; you get the idea.</p>
-
-<p>Generalization is usually the enemy of lean software. One of the best strategies is to force yourself to generalize &ldquo;on demand&rdquo;. Start with all assumptions and shortcuts neccessary to make your life easier <em>right now</em> and follow the old adage <a href="http://c2.com/cgi/wiki?ThreeStrikesAndYouRefactor">&ldquo;One, Two, Three, Refactor&rdquo;</a>. Don&rsquo;t worry too much about &ldquo;later&rdquo; &ndash; more often than you think, you&rsquo;ll come up with an even more elegant solution anyway.</p>
-
-<h4>Challenge frameworks, libraries and abstraction layers</h4>
-
-<p>Separation of Concerns is incredibly important &ndash; but so is keeping a code base maintainable. Coming from a Java shop with nightmares of SOA done wrong, we had a grand vision of a one-page dashboard in Backbone and Chaplin.JS served by a fancy Collection+JSON API as Broadway.JS application on top of a Sequelize ORM.</p>
-
-<p>In the end we saw we had so many dependencies and &ldquo;magic&rdquo; happening behind the scenes that displaying simple things from the database in the dashboard took ages in development &ndash; we realized we had made a 2013 version of the same mistakes in overengineering we were committed to not repeat. We threw out nearly everything and now use pure Backbone.JS on a lean, hand-built JSON API, tripling development efficiency.</p>
-
-<p>Don&rsquo;t believe in hypes. Believe in simplicity.</p>
-
-<h4>Take a step back</h4>
-
-<p>If you regularly look at the big picture and question the compartment and component borders inside of peoples' heads, you&rsquo;ll often find that modules do duplicated work, can be merged or could be thrown away altogether. Be bold and go for it when there&rsquo;s an opportunity.</p>
-
-<h4>Fight complexity all the way</h4>
-
-<p>The sooner you realize that code is as much a part of the problem as a part of the solution, the sooner you can start coding less. If the solution to your problem can fit into a plain old class, don&rsquo;t encapsulate it with the newest MVC framework or instantiate an <a href="http://static.springsource.org/spring/docs/2.5.x/api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html">AbstractSingletonProxyFactoryBean</a> around it &ldquo;just because&rdquo;. Seriously, keep it as simple as possible &ndash; but not simpler.</p>
-
-<p>I may be a heretic here, but if you look objectively at the <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang of Four patterns</a>, you&rsquo;ll realize that most of them were designed to lessen the pain of adding more code to a project involving many developers by <em>adding more code</em>. And that&rsquo;s okay, remember they come from an era without Git, TDD and Continuous Integration. They can be powerful at times, but they often serve as fuel for the vicious and self-serving cycle of software bloat. Use them wisely, but not for their own sake just or to look professional.</p>
-
-<h4>Continuous Rewrite</h4>
-
-<p>I&rsquo;m a big believer in Continuous Rewriting and it also <a href="http://www.citconf.com/wiki/index.php?title=Continuous_rewriting">seems to pick up adoption lately</a>. If instead of going all the way, you start out with a prototype that&rsquo;s <em>meant to be thrown away</em>, you achieve a lot of important goals:</p>
-
-<ul>
-<li>You free your mind from having to deliver the final solution and iterate <em>fast</em>, casually adding tests as you go.</li>
-<li>You protect yourself from abstracting too much and prevent adding &ldquo;fixtures&rdquo; for possible future use.</li>
-<li>You will have solved (a part of) the problem with working code and have validated the technical feasability of all aspects.</li>
-<li>You learn a <em>lot</em> about the stuff that works and scales and the stuff that doesn&rsquo;t.</li>
-</ul>
-
-
-<p>Now if you have separated your problem domain properly and have tests for business rules, it&rsquo;s easy to take all the knowledge you&rsquo;ve gained to not just refactor and extend the component but to <em>completely rewrite it</em>, simplifying the internal design to the maximum. This way, we have rewritten our core matching component three times already &ndash; from 3000 lines of Java to 600 lines of Python to 200 lines of Coffeescript, while still adding functionality and scalability by a factor of 200.</p>
-
-<h4>Pair programming and code reviews</h4>
-
-<p>Pair programming and code reviews are the best tools to prevent people from reinventing the wheel, continuously update each other on best practices, simplify code and reduce clutter. Both techniques directly as well as indirectly lead to less code &ndash; they guarantee that someone else will understand and have read the code and reduce &ldquo;code fear&rdquo; by an order of magnitude. If you find you often don&rsquo;t have the time to do pair programming and code reviews, you probably should do more of it.</p>
-
-<h3>More tips?</h3>
-
-<p>I&rsquo;m curious, so be sure to let me know in the comments!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cache invalidation made easy]]></title>
-    <link href="http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy/"/>
-    <updated>2013-05-31T08:13:00+02:00</updated>
-    <id>http://distributed.hamann.se/blog/2013/05/31/cache-invalidation-made-easy</id>
-    <content type="html"><![CDATA[<p><blockquote><p>&ldquo;There are only two hard problems in Computer Science: cache invalidation and naming things.&rdquo;</p><footer><strong>Phil Karlton</strong></footer></blockquote></p>
-
-<p>Full disclaimer: No, I didn&rsquo;t find the perfect solution either (guess it&rsquo;s an NP hard problem). For a lot of use cases, one of the generically applicable patterns I like best is explained very well by <a href="http://37signals.com/svn/posts/3113-how-key-based-cache-expiration-works">DHH</a> &ndash; my problem with it was that it does not cover the case when entity content changes under the very same ID. I will show you another nice and generic pattern for just this purpose for you to have another trick up your sleeve.</p>
-
-<p>For us, the key problem was about distributed tracking applications caching metadata about the campaigns or images we&rsquo;re delivering. For example, if a campaign manager needs to change the URL, the tracking application needs to redirect to another target. As the tracking is high volume, caching was a no-brainer. For cache invalidation, we settled for a pull approach of one minute refreshes from the database first, which could unfortunately serve stale data and obviously wouldn&rsquo;t scale with growing numbers of entries and servers.</p>
-
-<p>Now instead of custom-building something ourselves, we thought of a more generic approach &ndash; and for us, it boiled down to a dead simple convention.</p>
-
-<h4>How it works</h4>
-
-<p>First step, set up a messaging service. If you&rsquo;re on Amazon like us, <a href="http://aws.amazon.com/de/sns/">SNS</a> (+<a href="http://aws.amazon.com/de/sqs/">SQS</a> maybe) fits the bill perfectly and is set up in minutes, otherwise you might consider <a href="http://www.rabbitmq.com/">RabbitMQ</a> or any AMQP provider.</p>
-
-<p>Second step, create one topic for every entity with the same name.</p>
-
-<p>Third step, follow an easy convention:</p>
-
-<ul>
-<li>Everyone who is mutating this entity (with us, it&rsquo;s just the API, making things even easier) publishes the entity ID to the topic after writing to the database.</li>
-<li>Everyone who is caching this entity subscribes to the topic and re-pulls the instance when a &ldquo;dirty&rdquo; ID comes in.</li>
-</ul>
-
-
-<h5>This approach is so beautiful for a lot of reasons:</h5>
-
-<ul>
-<li>Loose coupling. There are no hard dependencies between any apps following this pattern, but they all work together magically with no stale caches</li>
-<li>Very easy to convert from a pull-based system</li>
-<li>No to low security hassle. Data never goes through the queue, only IDs</li>
-<li>Added plus for SNS users: You can safely leave the dirty work of monitoring and reliably keeping up a messaging system to Amazon.</li>
-</ul>
-
-
-<p>Caveat lector: Obviously this approach will probably only be viable for medium- to low-volume core and master data. For caching and invalidation at several orders of magnitude higher, you&rsquo;d probably be looking at specialized solutions and optimized modelling (Cassandra, S4 and the likes). Also, be careful as this eventually consistent solution still has some low but unknown amount of time where the cache will be stale. So if you&rsquo;re <em>absolutely dependent</em> on consistency for a problem domain, there are few other ways than disabling caching altogether.</p>
 ]]></content>
   </entry>
   
